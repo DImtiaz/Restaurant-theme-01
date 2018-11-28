@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="owl.theme.default.css">
+
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Philosopher');
+		@font-face{
+			font-family: lora;
+			src: url(Lora-Regular.ttf);
+		}
+		@font-face{
+			font-family: italo;
+			src: url(Italianno-Regular.otf);
+		}
+		@font-face{
+			font-family:dosis;
+			src: url(Dosis-Regular.otf);
+		}
+		@font-face{
+			font-family: dancingscript;
+			src:url(DancingScript-Regular.otf);
+		}
+		.aboutsection{
+			/*margin-top: 30px;*/
+			background:url("ab1.png") left bottom no-repeat;
+			/*margin-bottom: 30px;*/
+			/*padding-bottom: 30px;*/
+		}
+		#menu{
+			background: url("menu-card2.png") left top no-repeat;
+		}
+		.menu{
+			background: url("capsicum-bowl.png")right bottom no-repeat;
+
+		}
+		@media only screen and (max-width: 863px){
+			.white-overlay{
+			background: rgba(255,255,255,0.6);
+		}
+		}
+		@media only screen and (max-width: 991px){
+			.white-overlay-sp{
+				background: rgba(255,255,255,0.6);
+			}
+		}
+		.about-pre{
+			background: url("bg1.png") top right no-repeat;
+		}
+		.aboutsection h1{
+			font-family: italo;
+			font-size: 3em;
+
+		}
+		.aboutsection h2{
+			font-family: dosis;
+			font-size: 20px;
+		}
+		.aboutsection p{
+			line-height: 1.5em;
+			font-family: dosis;
+			font-size: 16px;
+		}
+		/*.aboutsection{
+			background: url(bg.jpg);
+			width: 100%;
+		}
+		.aboutsection::before{
+			background:rgba(0,0,0,0.5);
+		}*/
+		.images-box img {
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+		.img-box{
+			overflow: hidden;
+        	position: relative;
+	        margin: 0 auto;
+	        border: 1px solid #000;
+	        padding: 5px;
+		}
+		 
+		/*.img-box::after{
+			 border: 1px solid #000;
+	        bottom: 6px;
+	        content: "";
+	        left: 4px;
+	        position: absolute;
+	        right: 4px;
+	        top: 6px;
+		}*/
+		.bg1{
+			background: url();
+		}
+		#orderonline{
+			color: #000;
+			background: url(pattern.png) repeat , #fefefe;
+			padding-bottom: 40px;
+		}
+		.white-overlay{
+			/*background: rgba(255,255,255,0);*/
+		}
+		.pt-30{
+			padding-top: 30px;
+		}
+		.pb-50{
+			padding-bottom: 50px;
+		}
+		.border{
+			background: url("welcome02.png") no-repeat scroll center;
+			display: inline-block;
+		    height: 35px;
+		    width: 100%;
+
+		}
+		.border-white{
+			background: url("welcome02w.png") no-repeat scroll center;
+			display: inline-block;
+		    height: 35px;
+		    width: 100%;
+
+		}
+		.relative-h1{
+			position: relative;
+		}
+		.absolute{
+			position: absolute;
+		}
+		.orderonlineheader{
+			font-family: italo;
+			font-size: 3em;
+			margin-bottom: 0px;
+			margin-top: 40px;
+		}
+		.customerfeedbackheader{
+			font-family: italo;
+			font-size: 3em;
+			margin-top: 40px;
+		}
+		.box{
+			margin-top: 20px;
+		}
+		.orderonline p{
+			line-height: 1.8em;
+			font-style: italic;
+		}
+		.orderonlinebtn{
+			background-color: #fff;
+			border-radius: 1px;
+			color: #000;
+			/*font-family: 'Roboto', sans-serif !important;*/
+			font-family: 'Philosopher', sans-serif !important;
+			font-size: 14px;
+			font-weight: normal;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			padding: 7px 15px;
+			margin-top: 20px;
+			transition: all 0.5s ease 0s;
+			font-family: dosis;
+			border: 1px solid #262526;
+
+		}
+		.b-overlay{
+			background: rgba(0,0,0,.5);
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+		.orderonlinep{
+			margin-bottom: 20px;
+			margin-top: 10px;
+			font-family: dosis;
+			font-size: 18px;
+			font-style: italic;
+		}
+		.reservationimg{
+			margin-top: 40px;
+		}
+		#reservation{
+			background: url(reserve.jpg) center ;
+			background-size:cover;
+			color: #fff;
+		}
+		.reservationoverlay{
+			background: rgba(0,0,0,0.75);
+			padding-bottom: 55px;
+		}
+		.menucontainer{
+			/*background: url("food-pattern.png");*/
+		}
+		.menu-item {
+		    padding-bottom: 30px;
+		    border-bottom: 1px dotted #000;
+		}
+		.menu-inner {
+		    padding-top: 30px;
+		    position: relative;
+		}
+		.menu-inner h4 {
+		    padding-bottom: 15px;
+		    display: block;
+		    font-family: dancingscript;
+		    font-size: 2em;
+		    line-height: 32px;
+		    position: relative;
+		}
+		.menu-inner h4 span {
+		    margin-left: 20px;
+		    /*background: #fff;*/
+		    display: inline-block;
+		    text-align: center;
+		    line-height: 35px;
+		    color: #F53700;
+		    font-size: 1em;
+		    float: right;
+
+		}
+		/*.menu-inner h4::before{
+			border-bottom: 1px dotted #000;
+			position: absolute;
+			height: 2px;
+			content: "";
+			left: 0%;
+			width: 100%;
+			bottom: 5px;
+		}*/
+		.menu-item p {
+		    color: #000;
+		    font-weight: 400;
+		    font-size: 1.2em;
+		    line-height: 25px;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    font-family: dosis;
+		}
+		.btnmargin{
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		@media only screen and (max-width: 770px){
+			.menu-item{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+		.feedback{
+			background: url("cf.jpg")no-repeat center;
+			background-size: cover;
+			
+		}
+		.feedback::after{
+			display: block;
+			content: "";
+			background: rgba(0,0,0,0.7);
+			width: 100%;
+			height: 100%;
+		}
+		.feedbackoverlay{
+			background: rgba(0,0,0,0.7);
+			color: #fff;
+			width: 100%;
+			height: 100%;
+			min-height: 350px;
+		}
+		.owl-carousel{
+			padding:30px 15px 40px;
+		}
+		.reviews{
+			margin-top: 20px;
+		}
+		.infolinks{
+			color: #fff;
+			background: #111111;
+		}
+		.infomargin{
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.headertop{
+			color: #fff;
+			background: #111111;
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
+		.navbar-custom{
+			background: transparent;
+			color: #000;
+		}
+		.navbar-custom a{
+			color: #000;
+		}
+		.navbar{
+			margin-bottom: 0px !important;
+		}
+		.navbar-brand{
+			height: auto !important;
+			padding: 0px 0px !important;
+		}
+		.navbar-right{
+			padding-top: 25px;
+		}
+		.slider{
+			padding:0px !important;
+		}
+		@media only screen and (min-width: 768px){
+			.autoheight{
+			height: 90vh;
+			object-fit: cover;
+		}
+		}
+	</style>
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
+<body>
+	<section class="headertop hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-6 pull-right"><i class="fas fa-phone-volume"></i> 0208 529 5171</div>
+				<div class="col-md-4 col-sm-6 pull-right"> <i class="fas fa-map-marker-alt"></i> 99-101 Old Church Road, Chingford, London E4 6ST</div>
+			</div>
+		</div>
+	</section>
+	<section class="navigation">
+		<nav class="navbar navbar-custom">
+			  <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><img src="sample-logo-demo.png"></a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">About Us</a></li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+			          </ul>
+			          <li><a href="#">Menus</a></li>
+			          <li><a href="#">Reservation</a></li>
+			          <li><a href="#">Gallery</a></li>
+			          <li><a href="#">Contact</a></li>
+			        </li>
+			      </ul>
+			   
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+	</section>
+	
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<!-- <div id="wowslider-container0">
+	<div class="ws_images"><ul>
+		<li><a href="http://wowslider.net"><img src="data0/images/01.jpg" alt="bootstrap image slider" title="Welcome to Restaurant" id="wows0_0"/></a>Restaurant located in XXXXX area</li>
+		<li><img src="data0/images/02.jpg" alt="Providing Best Food" title="Providing Best Food" id="wows0_1"/>In XXXXXXXXXXX</li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Welcome to Restaurant"><span><img src="data0/tooltips/01.jpg" alt="Welcome to Restaurant"/>1</span></a>
+		<a href="#" title="Providing Best Food"><span><img src="data0/tooltips/02.jpg" alt="Providing Best Food"/>2</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">html slider</a> by WOWSlider.com v8.8</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+	<script type="text/javascript" src="engine0/script.js"></script> -->
+
+
+	<div class="slider owl-carousel">
+	  <div>
+	  	<img src="slider01.jpg" class="img-responsive autoheight">
+	  </div>
+	  <div>
+	  	<img src="slider02.jpg" class="img-responsive autoheight">
+	  </div>
+	</div>
+	<div class="introcontainer">
+		<div class="about-pre">
+		<div class="aboutsection">
+			<div class="white-overlay">
+				<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+					<h1 class="pt-30 relative-h1">Brentwood Spice - Best Indian Takeaway in Brentwood Station, Brentwood</h1>
+					<!-- <div class="border"></div> -->
+					</div>
+				</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center aboutsection2">
+					<h2>Local Indian Takeaway near you in Brentwood Station, Brentwood CM14 serving Herongate CM13, Warley CM14, Shenfield CM15 & Harold Wood RM3</h2>
+					<p class="pb-50">Just imagine relaxing in your favourite comfy chair and dreaming about what mouthwatering Indian food you could be devouring tonight? If only you could order online through our new website by just a few clicks. Brentwood Spice located on Platform 4 brentwood station, Brentwood CM14 4EW and have someone else cook your meal and deliver it for you. Browse the menu and see what you fancy, it really is that simple. </p>
+				</div>
+				
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<section id="orderonline">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2 text-center">
+					<h1 class="orderonlineheader">Order Online</h1>
+					<div class="border"></div>
+					<p class="orderonlinep">Having A Night In? <br> Now You Can Order Online</p>
+					<a href="" class="orderonlinebtn">Order Online</a>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<img src="food-cup.png" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reservation">
+		<div class="reservationoverlay">
+			<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<img src="glass.png" class="img-responsive reservationimg center-block" alt="">
+				</div>
+				<div class="col-md-4 text-center">
+					<h1 class="orderonlineheader">Reservation</h1>
+					<div class="border-white"></div>
+					<p class="orderonlinep">Reserve For Dinner<br>And Enjoy A Sumptuous Culinary Experience</p>
+					<a href="" class="orderonlinebtn">Reservation</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<div class="menucontainer">
+	<section id="menu">
+		<div class="menu">
+			<div class="white-overlay-sp">
+			
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="orderonlineheader">Special Menu</h1>
+					<div class="border"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<div class="menu-item">
+							<div class="menu-inner">
+								<h4>Chicken Fried Salad <span>£5.50</span></h4>
+								<p> Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-inner">
+								<h4>Sheek Kebab <span>£3.95</span></h4>
+								<p> Minced lamb with green herbs, grilled in the tandoor, served with pepper, onion and tomato..</p>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-inner">
+								<h4>Grilled Salmon <span>£4.95</span></h4>
+								<p>Grilled marinated salmon, served with pepper, onion and tomato.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="menu-item">
+							<div class="menu-inner">
+								<h4>Chicken Murabah <span>£7.95</span></h4>
+								<p>Chicken on the bone cooked in mild spices with green chillies and coriander.</p>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-inner">
+								<h4>Lamb Khusbi<span>£8.95</span></h4>
+								<p>Grilled lamb chop cooked in rich spices with pepper, tomato, green chilli and coriander.</p>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-inner">
+								<h4>Sheem Aloo <span>£5.95</span></h4>
+								<p> Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center btnmargin">
+						<a href="" class="orderonlinebtn">See Full Menu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+	</div>
+
+	<section class="feedback">
+			<div class="feedbackoverlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h1 class="customerfeedbackheader">Customer Feedback</h1>
+							<div class="border-white"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<div class="owl-carousel">
+								  <div>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<p class="reviews">Food was delivered early, food was sensational and will definitely order from here again when I’m in the town. Shame they don’t deliver to Jedburgh.</p> 
+								  	<p>
+								  		<strong>- Rebecca</strong>
+								  	</p>
+								  </div>
+								  <div>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<p class="reviews">First time trying this place wont be the last got a lovely set meal for 2 the pathia was to die for keep up the good work</p> 
+								  	<p>
+								  		<strong>- Robyn</strong>
+								  	</p>
+								  </div>
+								  <div>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<p class="reviews">I love this Indian takeaway the best in Hawick service was awesome recommend it to anyone food piping hot thanks for the munch guys</p>
+								  	<p>
+								  		<strong>- Anthony</strong>
+								  	</p>
+								  </div>
+								  <div>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<i class="fas fa-star"></i>
+								  	<p class="reviews">We are staying on the outskirts of Hawick tucked away in a cottage. Delivery driver called us a couple of times but did a good job finding us. Food we excellent. We all enjoyed it and it was reasonably priced. Definitely recommend!! </p>
+								  	<p>
+								  		<strong>- Jack</strong>
+								  	</p>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="infolinks">
+		<div class="infomargin">
+			<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h4>Contacts</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>Social</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>Opening Hours</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>Important Links</h4>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	items:1,
+  	autoplay:true,
+  	mouseDrag:false,
+  	touchDrag:false,
+  	pullDrag:false,
+  	freeDrag:false,
+    animateIn: 'fadeIn',
+  	animateOut: 'fadeOut',
+  	loop:true,
+  	dots:true,
+  	autoHeight:true
+
+  });
+});
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".slider").owlCarousel({
+			items:1,
+			autoplay:true
+		});
+	});
+</script>
+
+</body>
+</html>
